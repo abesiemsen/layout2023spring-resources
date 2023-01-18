@@ -84,17 +84,17 @@
         "basePath": "https://USERNAME.github.io/layout2023spring/"
       },
       {
-        "slug":"LaylaLeeChoi",
-        "lastName": "Lee Choi",
-        "firstName": "Layla",
-        "status": "enrolled",
-        "basePath": "https://USERNAME.github.io/layout2023spring/"
-      },
-      {
         "slug":"YannyLiang",
         "lastName": "Liang",
         "firstName": "Yanny",
         "status": "enrolled",
+        "basePath": "https://USERNAME.github.io/layout2023spring/"
+      },
+      {
+        "slug":"DanniLiu",
+        "lastName": "Liu",
+        "firstName": "Danni",
+        "status": "waitlisted",
         "basePath": "https://USERNAME.github.io/layout2023spring/"
       },
       {
@@ -144,6 +144,13 @@
         "lastName": "Wu",
         "firstName": "Flora",
         "status": "enrolled",
+        "basePath": "https://USERNAME.github.io/layout2023spring/"
+      },
+      {
+        "slug":"ChelseaYuan",
+        "lastName": "Yuan",
+        "firstName": "Chelsea",
+        "status": "waitlisted",
         "basePath": "https://USERNAME.github.io/layout2023spring/"
       },
       {
