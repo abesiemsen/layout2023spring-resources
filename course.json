@@ -261,36 +261,51 @@
           {
             "slug": "primary-text-layout",
             "name": "Primary Text Layout",
-            "hidden": true,
-            "assigned": "2023-01-18",
-            "due": "2023-01-18",
+            "hidden": false,
+            "assigned": "2023-01-23",
+            "due": "2023-01-25",
             "file": "index.html",
             "references": [
               {
                 "name": "Vue.js",
                 "link": "https://vuejs.org/v2/guide/syntax.html",
                 "description": "A reference for the Vue template syntax."
+              },
+              {
+                "name": "HTML 5 Doctor",
+                "link": "http://html5doctor.com/",
+                "description": "This page is somewhat dated, but it does a good job of breaking html elements into logical groups, and has good information about what each element is intended to represent."
               }
             ],
-            "description": "<p>We'll take an iterative approach to design, and we'll design in the browser. We'll start by focusing on primary text content only: Title, Subtitle, Date, Teaser, Content. Stylistically, your primary objective is to select and apply typeface(s), and make basic text layout choices: sizes, whitespace management, line-length, margin/padding, etc.</p>",
-            "instructions": "<p>Add structure and CSS to apply your style choices. Consider uploading more than one version, using <code>deliverable.json</code>.</p>"
+            "description": "<p>We'll take an iterative approach to designing our news stories page. We'll design in the browser, using a 'mobile first' approach. We'll add markup to organize the information on the page, and we'll define some basic style rules to handle content. We will <strong>not</strong> handle page layout yet – we're just cleaning up the browser defaults for text to make our story content more presentable.",
+            "instructions": "<p>Add structure and CSS to apply your style choices.</p><p>To make it easier to 'ignore' page layout, let's add this style to the page:<br><code>body { max-width: 360px; margin: auto; }</code>. This will force us into a 'mobile only' view.</p>"
           },
           {
-            "slug": "flex-experiment",
-            "name": "Flex Experiment",
-            "hidden": true,
-            "assigned": "2023-01-14",
-            "due": "2023-01-21",
+            "slug": "responsive-strategies",
+            "name": "Responsive Strategies",
+            "hidden": false,
+            "assigned": "2023-01-23",
+            "due": "2023-01-30",
             "file": "index.html",
             "references": [
               {
+                "name": "Strategies",
+                "link": "projects/news-story-template/responsive-strategies.pdf",
+                "description": "A wireframe of the two strategies you will demonstrate."
+              },
+              {
                 "name": "A Complete Guide to Flexbox",
                 "link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
-                "description": "The reference Abe likes for explaining all the different ways flex layout can help you arrange things."
+                "description": "A useful reference explaining the different ways flex layout can help you arrange things."
+              },
+              {
+                "name": "A Complete Guide to CSS Grid",
+                "link": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+                "description": "A useful reference explaining the different ways grid layout can help you arrange things."
               }
             ],
-            "description": "<p>Continue to refine your news-story layout, both in style and structure, using some/all of the principles we discussed in class. Also, find a place or places in your layout where flex-box is an appropriate solution to try, and experiment with using flex-based layout rules.</p>",
-            "instructions": "<p>When you feel comfortable with using flex-box as a layout tool, upload what you have!</p>"
+            "description": "<p>In class, we will discuss two possible layout strategies (see reference) for a responsive list of news story teasers. We'll begin applying the first strategy together in class, you'll be responsible for implementing the second strategy on your own.</p>",
+            "instructions": "<p>Use <code>deliverable.json</code> to present two deliverables: one for Strategy A, one for Strategy B.</p>"
           },
           {
             "slug": "component-layout",
