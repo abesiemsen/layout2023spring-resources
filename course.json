@@ -35,13 +35,6 @@
         "basePath": "https://Meerab02.github.io/layout2023spring/"
       },
       {
-        "slug":"BrianCui",
-        "lastName": "Cui",
-        "firstName": "Brian",
-        "status": "enrolled",
-        "basePath": "https://bcuivision.github.io/layout2023spring/"
-      },
-      {
         "slug":"HannaFu",
         "lastName": "Fu",
         "firstName": "Hanna",
@@ -61,13 +54,6 @@
         "firstName": "Helen",
         "status": "enrolled",
         "basePath": "https://localhermit.github.io/layout2023spring/"
-      },
-      {
-        "slug":"KateKim",
-        "lastName": "Kim",
-        "firstName": "Kate",
-        "status": "waitlisted",
-        "basePath": "https://KateKimdo.github.io/layout2023spring/"
       },
       {
         "slug":"MinjuKim",
@@ -91,32 +77,11 @@
         "basePath": "https://yanny-liang.github.io/layout2023spring/"
       },
       {
-        "slug":"DanniLiu",
-        "lastName": "Liu",
-        "firstName": "Danni",
-        "status": "waitlisted",
-        "basePath": "https://dnliu0.github.io/layout2023spring/"
-      },
-      {
-        "slug":"JackyLu",
-        "lastName": "Lu",
-        "firstName": "Jacky",
-        "status": "waitlisted",
-        "basePath": "https://USERNAME.github.io/layout2023spring/"
-      },
-      {
         "slug":"ShiyeonMonk",
         "lastName": "Monk",
         "firstName": "Shiyeon",
         "status": "enrolled",
         "basePath": "https://ShiyeonKu.github.io/layout2023spring/"
-      },
-      {
-        "slug":"MorganRogers",
-        "lastName": "Rogers",
-        "firstName": "Morgan",
-        "status": "enrolled",
-        "basePath": "https://morgan-rogers.github.io/layout2023spring/"
       },
       {
         "slug":"HyunseoRoh",
@@ -144,7 +109,7 @@
         "lastName": "Wu",
         "firstName": "Flora",
         "status": "enrolled",
-        "basePath": "https://USERNAME.github.io/layout2023spring/"
+        "basePath": "https://WanrongWu.github.io/layout2023spring/"
       },
       {
         "slug":"ChelseaYuan",
@@ -152,13 +117,6 @@
         "firstName": "Chelsea",
         "status": "waitlisted",
         "basePath": "https://chelsealyuan.github.io/layout2023spring/"
-      },
-      {
-        "slug":"ZitaoZhang",
-        "lastName": "Zhang",
-        "firstName": "Zitao",
-        "status": "waitlisted",
-        "basePath": "https://USERNAME.github.io/layout2023spring/"
       }
       
     ],
