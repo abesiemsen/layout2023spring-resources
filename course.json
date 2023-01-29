@@ -266,6 +266,28 @@
             "instructions": "<p>Use <code>deliverable.json</code> to present two deliverables: one for Strategy A, one for Strategy B.</p>"
           },
           {
+            "slug": "featured-story-teaser",
+            "name": "Featured Story Teaser",
+            "hidden": false,
+            "assigned": "2023-01-30",
+            "due": "2023-02-01",
+            "file": "index.html",
+            "references": [],
+            "description": "<p>Add the Featured Story to your page, using two different responsive layout strategies. The particulars of the strategies are up to you, but the featured stories in your two versions should be different in terms of layout, not just style.</p><p>Although the data source we have doesn't provide more information than you've already seen, feel free to consider whether other content elements <em>should</em> be included. Author? Location? Feel free to add 'static' versions of these elements as you see fit, to demonstrate how they would work in the layout, even though they won't change with the story data.</p><p>Along with the layout and content additions, consider other variables that could change for the featured story visually: Font-size? Typeface? Framing differences? Color? How might these factor into your responsive strategy implementation?</p><p>Use whatever version of the 'other' stories you prefer &mdash; could be an existing version, could be a new version  &mdash;  but make sure your featured story treatment 'fits' visually with the rest of the page.<p>",
+            "instructions": "<p>Use <code>deliverable.json</code> to present two versions of your page, featured story included.</p>"
+          },
+          {
+            "slug": "news-site-branding",
+            "name": "News Site Branding",
+            "hidden": false,
+            "assigned": "2023-01-30",
+            "due": "2023-02-06",
+            "file": "index.html",
+            "references": [],
+            "description": "<p>Create a brand for your news site. Name it, give it a tag line, develop a simple color palette, and ultimately create something along the lines of a styled 'masthead' to use on the site. Use whatever design tools you prefer to explore ideas. Upload a page that shows me where you've landed, but also document your ideas, iterations, concepts, etc. <em>The deliverable will not be an iteration of the existing news site, it will just be a page with branding concepts, and your selected final direction.</em> I'll expect you to refine the brand as we move into future aspects of the project, but don't expect dedicated time for it &mdash; this week is your one chance to focus entirely on this aspect of the project!</p>",
+            "instructions": "<p>Don't worry about rendering the brand in HTML/CSS yet, if you prefer not to. You may deliver an HTML page with embedded images exported from other tools, photos of drawings, whatever, but understand that ultimately the finished design it will end up being part of an HTML page, so consider ramifications of font-choices, etc.</p>"
+          },
+          {
             "slug": "component-layout",
             "name": "Component Layout",
             "hidden": true,
