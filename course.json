@@ -110,15 +110,7 @@
         "firstName": "Flora",
         "status": "enrolled",
         "basePath": "https://WanrongWu.github.io/layout2023spring/"
-      },
-      {
-        "slug":"ChelseaYuan",
-        "lastName": "Yuan",
-        "firstName": "Chelsea",
-        "status": "waitlisted",
-        "basePath": "https://chelsealyuan.github.io/layout2023spring/"
-      }
-      
+      }      
     ],
     "dropped": [
       
