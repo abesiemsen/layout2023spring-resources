@@ -280,71 +280,43 @@
             "instructions": "<p>Don't worry about rendering the brand in HTML/CSS yet, if you prefer not to. You may deliver an HTML page with embedded images exported from other tools, photos of drawings, whatever, but understand that ultimately the finished design it will end up being part of an HTML page, so consider ramifications of font-choices, etc.</p>"
           },
           {
-            "slug": "component-layout",
-            "name": "Component Layout",
-            "hidden": true,
-            "assigned": "2023-01-21",
-            "due": "2023-01-23",
-            "file": "index.html",
-            "references": [],
-            "description": "<p>Following the 'component/safe-area' pattern is a useful way to approach common layout challenges in a vertically-stacked page, and provides a good framework for style rules that operate as a system, instead of simply matching styles with page elements 1:1. What are the logical components of the page? Which components should follow your 'default' rules, and which should have exceptions?</p><p>In addition to the specific requirements noted below, make design choices about that rest of the page content that continue to explore options (font, color, size, etc), and that accomodate and complement the large header image.</p>",
-            "instructions": "<p>Create a version of your layout that uses the component/safe-area pattern as a macro-scale solution for page layout. Create an edge-to-edge banner with the story image, and make/apply design decisions as necessary to make the banner 'make sense' at all device-widths.</p>"
-          },
-          {
-            "slug": "design-iterations",
-            "name": "Design Iterations",
-            "hidden": true,
-            "assigned": "2023-01-23",
-            "due": "2023-01-28",
-            "file": "index.html",
-            "references": [],
-            "description": "<p>Based on the feedback/discussion you had with me in class, create at least three different versions of your news-template, aimed at different communication objectives. One might aim to be the most main-stream, conventional, middle of the road presentation it can be. One might be the one that aims to be bold, in your face, attention-grabbing. One might be inviting, friendly, accessible. One might be aimed at really treating the image as the hero content. One might be aimed at really activating margin-space in order to 'break out of the single column feel at larger sizes.</p><p>Whatever targets you pick, use them to guide your design decisions. &ldquo;Is this typeface really agressive enough? How big can it go and still work?&rdquo;</p><p>Consider, these iterations don't necessarily require big structural changes in your html. You may find that you just need to change css. In fact, <em>only</em> having to change css would be a very good indication that you've structured your html in a very semantic way, in which it describes the content, not the design, and is therefore useful for <em>any</em> design.</p>",
-            "instructions": "<p>Use <code>deliverable.json</code> to upload at least three versions of your news-template design.</p>"
-          },
-          {
-            "slug": "related-story-iterations",
-            "name": "Related Story Iterations",
-            "hidden": true,
-            "assigned": "2023-01-28",
-            "due": "2023-01-30",
-            "file": "index.html",
-            "references": [],
-            "description": "<p>In class, we walked through how to use flex layout to manage grid items responsively in the macro layout, and also experimented with using flex to handle micro-layout issues. We also used a few sneaky tricks to handle common layout headaches. We used negative margin on the flex container to 'make room' for interior gutter margins. We used the 'padding-bottom' trick (along with absolute positioning) to create a fixed-aspect-ratio container for the purpose of conforming all images to a consistent size/shape. We set <code>img</code> tags to be <code>display: block;</code> in order to get rid of the phantom space beneath.</p><p>Now, it's time to put some of these techniques to work in your own layouts! Create three versions of the 'related-stories' block, where all of the various 'elbows' are safely tucked-in, and the page feels like a fully-controlled flexible system.</p>",
-            "instructions": "<p>Use <code>deliverable.json</code> to upload at least three different visual/technical approaches to the related story items. They can be isolated experiments, or more integrated with your existing overall templates, as you see fit.</p>"
-          },
-          {
-            "slug": "static-embellishments",
-            "name": "Static Embellishments",
-            "hidden": true,
-            "assigned": "2023-01-30",
-            "due": "2023-02-04",
-            "file": "index.html",
-            "references": [],
-            "description": "<p><em>What is missing that prevents this template from being portfolio-ready?</em></p>",
-            "instructions": "<p>Take the results of your experiments and iterations, pick a visual direction that's the right one to follow, make a version of the layout that has zero broken or unfinished technical components, and which introduces static elements for any aspects of the story you feel are not represented. (e.g.: Author details, social media links, in-story content like pull-quotes, etc.)</p><p>Recognizing that we'll approach masthead/navigation/footer next week, stay focused on story-specific elements for now.</p>"
-          },
-          {
-            "slug": "finished-story-layout",
-            "name": "Finished Story Layout",
-            "hidden": true,
-            "assigned": "2023-02-04",
-            "due": "2023-02-06",
-            "file": "index.html",
-            "references": [],
-            "description": "<p>Time to finalize decisions, at least as much as we can without masthead / navigation / footer.</p><p><strong>NOTE: I've added two new access options to our data. You can now get an array called <code>storiesWithSameTag</code>. You can also a get subset of top stories using <code>topStories(n)</code> where <code>n</code> is the number of stories you want.</strong></p>",
-            "instructions": "<p>Revise per your discussion with me in class, and post your final pre-masthead story template.</p>"
-          },
-          {
-            "slug": "news-site-branding",
-            "name": "News Site Branding",
-            "hidden": true,
+            "slug": "responsive-masthead",
+            "name": "Responsive Masthead",
+            "hidden": false,
             "assigned": "2023-02-06",
-            "due": "2023-02-11",
+            "due": "2023-02-13",
             "file": "index.html",
-            "references": [],
-            "description": "<p>Create a brand for your news site. Name it, give it a tag line, develop a simple color palette, and ultimately create something along the lines of a styled 'masthead' to use on the site. Don't bother with a logomark. Instead, use the name of the site as the visual 'signature', and design that. Use whatever design tools you prefer to explore ideas. Upload a page that shows me where you've landed, but also document your ideas, iterations, concepts, etc. <em>The deliverable will not be an iteration of the existing news site, it will just be a page with branding concepts, and your selected final direction.</em> I'll expect you to refine the brand as we move into future aspects of the project, but don't expect dedicated time for it &mdash; this week is your one chance to focus entirely on this aspect of the project!</p>",
-            "instructions": "<p>Don't worry about rendering the brand in HTML/CSS yet, if you prefer not to. You may deliver an HTML page with embedded images exported from other tools, photos of drawings, whatever, but understand that ultimately the finished design it will end up being part of an HTML page, so consider ramifications of font-choices, etc.</p>"
+            "description": "<p>Referring to your branding concept, build a responsive masthead and menu for your news page, and style the news content as needed to conform with your brand.</p>",
+            "instructions": "<p>This version of your page should include your site name/tagline, featured story, and secondary stories. You can use the responsive strategy of your choice for each element. The site masthead should include a menu which 'collapses' into a hamburger menu at smaller sizes. (The menu items don't have to actually link to anything.)</p>"
+          },
+          {
+            "slug": "built-with-bootstrap",
+            "name": "Built with Bootstrap",
+            "hidden": false,
+            "assigned": "2023-02-06",
+            "due": "2023-02-15",
+            "file": "index.html",
+            "references": [
+              {
+                "name": "Bootstrap Documentation",
+                "link": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+                "description": "Familiarize yourself with this documentation. Pay particular attention to the Layout and Components sections, but be aware there are tools that may be useful to you outside these sections."
+              }
+            ],
+            "description": "<p>Bootstrap is a front-end toolkit that provides a grid-system and numerous components for building pages in a standardized way. You will create a version of the news story page using Bookstrap, <strong><em>Instead</em></strong> of your own CSS. For the purposes of this deliverable, don't worry about your custom brand/masthead. Instead use standard Bootstrap components as needed to create a generic masthead.</p>",
+            "instructions": "<p>Create a version of the page that is a finished responsive layout of the news page with virtually no 'custom' css at all.</p>"
+          },
+          {
+            "slug": "finished template",
+            "name": "Finished Template",
+            "hidden": false,
+            "assigned": "2023-02-06",
+            "due": "2023-02-22",
+            "file": "index.html",
+            "description": "<p>Make the final portfolio-ready version of your news template. (This should be based on your 'custom' layout, not the Bootstrap version.)</p>",
+            "instructions": "<p>This final deliverable should include:</p><ul><li>Your custom site masthead and menu</li><li>The featured story teaser</li><li>A list/grid of secondary story teasers</li><li>Any static placeholders you've added to represent elements not available from our dataset.</li><li>A site footer, including:<ul><li>Social media nav (unless you have this elsewhere on the page already)</li><li>'Business' nav (Privacy Policy, Terms and Conditions, Contact Us, etc)</li><li>Copyright/disclosure text, including a source link to <a href=\"https://gnews.io/\">GNews, our API data source.</a></li><li>Whatever information you want to include to take credit for the layout.</li></ul></li><li>Style choices for all elements consistent with your brand.</li></ul><p><strong>All page elements should be responsive, working visually at any screen width from 320px up.</strong></p>"
           }
+
         ]
       },
 
@@ -355,7 +327,7 @@
         "hidden": true,
         "start": "2023-02-11",
         "end": "2023-02-27",
-        "description": "<p>Our news site needs a header. Building a responsive site header, with all it's component parts and pieces, tends to be a fairly challenging endeavor. In order to present yourself with a typical set of challenges, your site header should mee the following requirements:</p><ul><li>It should include three major elements:<ul><li>Branding / Masthead</li><li>Primary Navigation</li><li>Account / Sign-up navigation</li></ul></li><li>Masthead should include site name or brand. It should probably include a tagline.</li><li>Primary navigation options should be two levels deep<ul><li>At least 2 top-level items have sub-categories</li><li>Roughly 20 total individual navigation options (top and sub combined)</li></ul></li><li>It should be responsive (work visually at any screen-width).<ul><li>At mobile sizes, primary nav should be hidden behind hamburger menu button or similar</li><li>At desktop sizes, top-level primary nav is NOT hidden. Sub-items probably remain hidden, using flyout navigation or similar.</li></ul></li><li>Account / sign up navigation should consider (at least) two states: not logged in, and logged in.</li><li>Other requirements:<ul><li>It should use real names for things (no obvious repetition or placeholders)</li><li>It should present appropriate categories/sub-categories for primary nav, given the purpose of the site.</li></ul></li></ul>",
+        "description": "<p>Our news site needs a header. Building a responsive site header, with all it's component parts and pieces, tends to be a fairly challenging endeavor. In order to present yourself with a typical set of challenges, your site header should meet the following requirements:</p><ul><li>It should include three major elements:<ul><li>Branding / Masthead</li><li>Primary Navigation</li><li>Account / Sign-up navigation</li></ul></li><li>Masthead should include site name or brand. It should probably include a tagline.</li><li>Primary navigation options should be two levels deep<ul><li>At least 2 top-level items have sub-categories</li><li>Roughly 20 total individual navigation options (top and sub combined)</li></ul></li><li>It should be responsive (work visually at any screen-width).<ul><li>At mobile sizes, primary nav should be hidden behind hamburger menu button or similar</li><li>At desktop sizes, top-level primary nav is NOT hidden. Sub-items probably remain hidden, using flyout navigation or similar.</li></ul></li><li>Account / sign up navigation should consider (at least) two states: not logged in, and logged in.</li><li>Other requirements:<ul><li>It should use real names for things (no obvious repetition or placeholders)</li><li>It should present appropriate categories/sub-categories for primary nav, given the purpose of the site.</li></ul></li></ul>",
         "deliverables": [
           {
             "slug": "mobile-nav-layout",
