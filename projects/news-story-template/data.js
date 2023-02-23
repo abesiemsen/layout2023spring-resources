@@ -4,7 +4,7 @@ const newsTemplate = new Vue({
   data: function() {
     return {
       apikey: 'fb29b89fc52abbc1dc8db3c744cb651c',
-      cacheDuration: 1000 * 60 * 60 * 2,
+      cacheDuration: 1000 * 60 * 60 * 12,
       currentStoryId: 0,
       allStories: []
     };
