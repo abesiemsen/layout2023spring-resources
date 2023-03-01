@@ -311,7 +311,7 @@
             "name": "Finished Template",
             "hidden": false,
             "assigned": "2023-02-06",
-            "due": "2023-02-22",
+            "due": "2023-02-27",
             "file": "index.html",
             "description": "<p>Make the final portfolio-ready version of your news template. (This should be based on your 'custom' layout, not the Bootstrap version.)</p>",
             "instructions": "<p>This final deliverable should include:</p><ul><li>Your custom site masthead and menu</li><li>The featured story teaser</li><li>A list/grid of secondary story teasers</li><li>Any static placeholders you've added to represent elements not available from our dataset.</li><li>A site footer, including:<ul><li>Social media nav (unless you have this elsewhere on the page already)</li><li>'Business' nav (Privacy Policy, Terms and Conditions, Contact Us, etc)</li><li>Copyright/disclosure text, including a source link to <a href=\"https://gnews.io/\">GNews, our API data source.</a></li><li>Whatever information you want to include to take credit for the layout.</li></ul></li><li>Style choices for all elements consistent with your brand.</li></ul><p><strong>All page elements should be responsive, working visually at any screen width from 320px up.</strong></p>"
@@ -344,42 +344,33 @@
         ],
         "deliverables": [
           {
-            "slug": "requirements-list",
-            "name": "Deliverable Name Goes Here",
-            "hidden": true,
-            "assigned": "2023-01-01",
-            "due": "2023-02-01",
+            "slug": "master-template",
+            "name": "Master Template",
+            "hidden": false,
+            "assigned": "2023-03-01",
+            "due": "2023-03-06",
             "file": "index.html",
-            "description": "Deliverable description html goes here.",
-            "instructions": "Deliverable instructions html goes here.",
+            "description": "<p>For this project, we will build the Reservation lookup/create/edit system. Most of the other sub-systems of our dashboard relate to reservations, so we'll plan to create 'stub' representations of those sub-parts: The vehicle selector, the route selector, etc.</p><p>For now, we'll start by defining the Master Template: the basic HTML structure that all pages will share: elements like header and footer, but also the 'constraints' for main content layout &mdash; such as a standard grid system, global sidebar nav, etc. Consider putting some placeholder content elements in the template just to confirm that the template works as expected with content. The template should work at any size from 768px wide to 1920px wide.</p>",
+            "instructions": "<p>Work with your group partners to create a single 'master template' page.</p><p>Only one person in your group will need to turn in this deliverable.</p>",
             "references": [
-              {
-                "name": "Reference Name Goes Here",
-                "link": "reference/url/goes/here",
-                "description": "Describe the reference here."
-              }
             ],
             "examples": [
-              {
-                "name": "Example Name Goes Here",
-                "link": "example/url/goes/here"
-              }
             ]
           },
           {
-            "slug": "deliverable-slug-goes-here",
-            "name": "Deliverable Name Goes Here",
+            "slug": "login-page",
+            "name": "Exercise: Login Page",
             "hidden": true,
-            "assigned": "2023-01-01",
-            "due": "2023-02-01",
+            "assigned": "2023-03-01",
+            "due": "2023-03-06",
             "file": "index.html",
             "description": "Deliverable description html goes here.",
-            "instructions": "Deliverable instructions html goes here.",
+            "instructions": "<p>Read the Bootstrap Forms Documentation section linked below. (You can skip the Validation section for now.)</p><p>Make an example page, with one of each of these form element types:</p>",
             "references": [
               {
-                "name": "Reference Name Goes Here",
-                "link": "reference/url/goes/here",
-                "description": "Describe the reference here."
+                "name": "Bootstrap Forms Documentation",
+                "link": "https://getbootstrap.com/docs/5.3/forms/overview/",
+                "description": "Boostrap's documentation for form elements and best practices."
               }
             ],
             "examples": [
