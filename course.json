@@ -360,7 +360,7 @@
           {
             "slug": "form-examples",
             "name": "Exercise: Form Examples",
-            "hidden": true,
+            "hidden": false,
             "assigned": "2023-03-01",
             "due": "2023-03-06",
             "file": "index.html",
