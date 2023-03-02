@@ -358,26 +358,22 @@
             ]
           },
           {
-            "slug": "login-page",
-            "name": "Exercise: Login Page",
+            "slug": "form-examples",
+            "name": "Exercise: Form Examples",
             "hidden": true,
             "assigned": "2023-03-01",
             "due": "2023-03-06",
             "file": "index.html",
-            "description": "Deliverable description html goes here.",
-            "instructions": "<p>Read the Bootstrap Forms Documentation section linked below. (You can skip the Validation section for now.)</p><p>Make an example page, with one of each of these form element types:</p>",
+            "description": "<p>Forms, form elements, and form layout are an important part of web design, and a key aspect of this project. This exercise will have you familarize yourself with Bootstrap's tools for building forms by reading the documentation, then demonstrate your understanding by building an example form.</p><p>Do this assignment individually, not as part of your project group.</p>",
+            "instructions": "<p>Read the Bootstrap Forms Documentation section referenced below. (You can skip the Validation section for now.)</p><p>Make an example page, with (at minimum) these elements:</p><ul><li><li>A Text Input</li><li>A Password Input</li><li>A Select List with 4 options</li><li>A Checkbox with a label</li><li>An Input Group with the prefix 'https://'</li><li>A submit button (Note that buttons are covered in a different part of the Bootstrap documentation)</li></ul><p>Every element should be labeled.</p>",
             "references": [
               {
                 "name": "Bootstrap Forms Documentation",
                 "link": "https://getbootstrap.com/docs/5.3/forms/overview/",
-                "description": "Boostrap's documentation for form elements and best practices."
+                "description": "Bootstrap's documentation for form elements and best practices."
               }
             ],
             "examples": [
-              {
-                "name": "Example Name Goes Here",
-                "link": "example/url/goes/here"
-              }
             ]
           }
         ]
