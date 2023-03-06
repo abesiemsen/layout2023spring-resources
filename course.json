@@ -342,11 +342,34 @@
         "examples": [
           
         ],
+        "groups": [
+          {
+            "slug": "group-1",
+            "name": "Meera | Hanna | Krissy",
+            "basePath": "https://abesiemsen.github.io/layout2023_control-panel_group-1/"
+          },
+          {
+            "slug": "group-2",
+            "name": "Helen | Minju | Taeho",
+            "basePath": "https://abesiemsen.github.io/layout2023_control-panel_group-2/"
+          },
+          {
+            "slug": "group-3",
+            "name": "Yanny | Shiyeon |  Hyunseo",
+            "basePath": "https://abesiemsen.github.io/layout2023_control-panel_group-3/"
+          },
+          {
+            "slug": "group-4",
+            "name": "Page | Jeffrey | Flora",
+            "basePath": "https://abesiemsen.github.io/layout2023_control-panel_group-4/"
+          }
+        ],
         "deliverables": [
           {
             "slug": "master-template",
             "name": "Master Template",
             "hidden": false,
+            "useGroups": true,
             "assigned": "2023-03-01",
             "due": "2023-03-06",
             "file": "index.html",
