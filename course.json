@@ -405,10 +405,25 @@
             "hidden": false,
             "useGroups": true,
             "assigned": "2023-03-06",
-            "due": "2023-03-08",
+            "due": "2023-03-20",
             "file": "index.html",
             "description": "<p>With your Master Template complete, it's time to wireframe our control-panel in code. Decide what pages will exist, and what major sections exist on each page. Create placeholders for these pages and sections. Provide enough information so that we understand what each page and section represents and what it's responsibility will be, but don't worry yet about all the details in each section. Our goal is to create the 'outline' that we'll refine and add detail to in later steps. Some questions to consider:</p><ul><li>Can you make decisions about html structure here that can carry through to the final version?</li><li>What Bootstrap components or tools might be applicable at this stage?</li><li>Do you need to establish additional 'standards' beyond what your Master Template has defined?</li><li>What comments or other systems might be useful within your code to help create clarity between group members?</li><li>How might the decisions you make at this step affect your ability to distribute future work within your group?</li></ul>",
-            "instructions": "<p>Work with your group partners to 'map out' the different parts of the control panel, and link them together as needed with navigation.</p><p>Work with your group to make sure your group repository includes this deliverable.</p>",
+            "instructions": "<p>Work with your group partners to 'map out' the different parts of the control panel, and link them together as needed with navigation.</p><p>Work with your group to make sure your group repository includes this deliverable.</p><p>",
+            "references": [
+            ],
+            "examples": [
+            ]
+          },
+          {
+            "slug": "final",
+            "name": "Final Control Panel",
+            "hidden": false,
+            "useGroups": true,
+            "assigned": "2023-03-20",
+            "due": "2023-03-29",
+            "file": "index.html",
+            "description": "<p>Having reviewed everyone's wireframes, it's clear I did a poor job of helping shortcut the UX process so that we could focus more on the UI layout. In effort to remedy that, I discussed with each group the idea of approaching the reservation as a summary of five major 'areas':</p><ul><li>Customer</li><li>Vehicle</li><li>Location/Route</li><li>Schedule</li><li>Cost</li></ul><p>Further, for the purposes of this assignment, we want to think of each of those five areas in their 'empty' or 'starting' state (Like the \"Where do you want to fly today?\" widget on an airline homepage), and the finished/complete state (\"Here's a summary of your reservation\") but we will NOT focus on the detailed UX/UI processes that come in between.</p><p>I expect your final deliverable to include:</p><ul><li>A 'create a reservation' page/form, with each of the five areas above represented in it's initial state.</li><li>A way to search for existing reservations, and a list of search results, with each item in the list acting as a top-line summary of key reservation details.</li><li>The ability to click on a search result to see a 'detail' page for that reservation. The detail page should include the 'finished' view of each of the five areas above. It should provide enough information to answer most questions about the reservation, but does not need to demonstrate HOW you got to the finished state. That is, show me all the details about the selected vehicle, but don't worry about modeling the process of FINDING a vehicle.</li></ul><p>As much as possible, focus your attention on layout (how should this information be grouped and arranged), and on implementing those layout decisions using Bootstrap.</p>",
+            "instructions": "<p>Work with your group members to create final pages/views as described above.</p>",
             "references": [
             ],
             "examples": [
