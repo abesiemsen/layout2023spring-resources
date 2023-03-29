@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game User Interface</title>
+
+    <style>
+        [v-cloak] { display: none; }
+    </style>
+    <!-- This is just here tp support the map display example below. -->
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .map { display: none; }
+        .map-open .map { display: block; }
+
+        .indicator {
+            height: 100%;
+            transform-origin: 0 0;
+        }
+
+        .phasers,
+        .missiles,
+        .shields,
+        .hull {
+            height: 20px;
+            width: 300px;
+        }
+
+        .shields {
+            background-color: rgb(0, 61, 61);
+            border: 1px solid rgb(0, 61, 61);
+        }
+        .shields .indicator {
+            background-color: aqua;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .shields.warning .indicator {
+            background-color: rgb(246, 255, 0);
+        }
+        .shields.danger .indicator {
+            background-color: rgb(255, 0, 0);
+        }
+        .hull {
+            background-color: rgb(44, 44, 44);
+            border: 1px solid rgb(44, 44, 44);
+        }
+        .hull .indicator {
+            background-color: rgb(170, 170, 170);
+            transition: transform, 0.2s; 
+        }
+        .phasers {
+            background-color: rgb(136, 72, 0);
+            border: 1px solid rgb(136, 72, 0);
+        }
+        .phasers .indicator {
+            background-color: rgb(255, 187, 0);
+            transition: transform, 0.2s; 
+        }
+        .missiles {
+            background-color: rgb(49, 0, 124);
+            border: 1px solid rgb(49, 0, 124);
+        }
+        .missiles .indicator {
+            background-color: rgb(102, 0, 255);
+            transition: transform, 0.2s; 
+        }
+        .flex {
+            display: flex;
+        }
+        .flex > * {
+            margin: 2px;
+        }
+
+        .status {
+            width: 80px;
+            background-color: red;
+            border: none;
+            font-size: 9px;
+            padding: 4px 0;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            height: auto;
+        }
+        .status.online {
+            background-color: grey;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="app" v-cloak>
+
+        <!--
+            Use the 'v-toggle-body-class' directive to add/remove a class from the <body> tag when an element is clicked.
+            This may be useful for doing things like making a map view expand/retract.
+        -->
+        <button v-toggle-body-class:map-open> Map </button>
+        <div class="map"> I am the map display! </div>
+
+        <!-- Score -->
+        <p>Score: {{ game.score }}</p>
+
+        <!-- RunTime -->
+        <p>Run time (seconds): {{ game.elapsed }}</p>
+
+        <!-- Phasers -->
+        <div class="flex">
+            <div class="phasers">
+                <div class="indicator" :style="{ transform: 'scaleX(' + game.resources.phasers + ')' }"></div>
+            </div>
+            <div>
+                <button @click="firePhasers">Fire Phasers</button>
+            </div>
+        </div>
+        <!-- Missiles -->
+        <div class="flex">
+            <div class="missiles">
+                <div class="indicator" :style="{ transform: 'scaleX(' + game.resources.missiles / 10 + ')' }"></div>
+            </div>
+            <div>
+                <button @click="fireMissile">Fire Missile</button>
+            </div>
+        </div>
+
+        <!-- Shields -->
+        <div class="flex">
+            <div class="shields" :class="{ warning: game.resources.shields < 0.67, danger: game.resources.shields < 0.33 }">
+                <div class="indicator" :style="{ transform: 'scaleX(' + game.resources.shields + ')' }">
+                </div>
+            </div>
+            <div>Shields</div>
+        </div>
+
+        <!-- Hull -->
+        <div class="flex">
+            <div class="hull" :class="{ warning: game.resources.hull < 0.67, danger: game.resources.hull < 0.33 }">
+                <div class="indicator" :style="{ transform: 'scaleX(' + game.resources.hull + ')' }">
+                </div>
+            </div>
+            <div>Hull Integrity</div>
+        </div>
+        
+        <div class="flex">
+            <div class="lifesupport status" :class="{ online: game.systemStatus.lifesupport}">Life Support</div>
+            <div class="thrusters status" :class="{ online: game.systemStatus.thrusters}">Thrusters</div>
+            <div class="sensors status" :class="{ online: game.systemStatus.sensors}">Sensors</div>
+            <div class="shields status" :class="{ online: game.systemStatus.shields}">Shields</div>
+            <div class="phasers status" :class="{ online: game.systemStatus.phasers}">Phasers</div>
+            <div class="missiles status" :class="{ online: game.systemStatus.missiles}">Missiles</div>
+        </div>
+            
+
+        <pre>{{ game }}</pre>
+
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="game-data-simulation-service.js"></script>
+    <script>new Simulator().initialize({
+        type: 'SpaceCombat', // 'SpaceCombat' | 'FantasyRPG'
+        eventsPerMinute: 20,
+        inventoryCount: Math.floor(Math.random() * 13), // between 0 and 12
+        inventoryOptions: [
+            'Alien Artifact',
+            'Alluvial Damper',
+            'Atmospheric Sample',
+            'Encrypted Data Block',
+            'Flux Capacitor',
+            'Fuel Rod',
+            'Hydro Spanner',
+            'Hydrogen Cells',
+            'Organic Matter',
+            'Salvaged Part',
+            'Uncontained Plutonium',
+            'Unrecognized Compounds',
+        ],
+        questCount: Math.floor(Math.random() * 6), // between 0 and 5
+        questOptions: [
+            'Stop the Nerf Herder',
+            'The Trouble with Tribbles',
+            'Alien Specimen Collection',
+            'Squad Redeployment',
+            'Time Dialation Speed Run',
+            'The Overlord has Arrived',
+            'Distress Beacon',
+            'Whomprat Milkrun',
+        ],
+        threatCount: Math.floor(Math.random() * 6), // between 0 and 5
+        threatOptions: [
+            'Unmarked Freighter',
+            'Cargo Loader',
+            'Imperial Cruiser',
+            'Fast Interceptor',
+            'Regional Transport',
+            'Space Station',
+            'Scud Runner',
+            'Ice Hauler',
+        ]
+    }).mount('#app')</script>
+</body>
+</html>

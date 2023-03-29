@@ -1,0 +1,43 @@
+Fantasy RPG
+    player
+        xp
+        avatar
+        class
+    map
+        quest marker(s)
+        threat indicator(s)
+        current map/level
+    quest info
+    stats
+        health
+        magic resource (mana, rage, ki, etc)
+        ammunition count
+    buffs / debuffs
+    inventory
+    equipped items / armor / weapons
+
+
+Space Combat
+    player
+        xp
+        avatar
+        class
+    map
+        quest marker(s)
+        threat indicator(s)
+        current map / level
+    quest info
+    stats
+        shield charge
+        hull integrity
+        engine power
+        phaser charge
+        ammunition count
+    system status
+        life-support
+        engines
+        shields
+        weapons
+        sensors
+    inventory
+
