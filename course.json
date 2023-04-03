@@ -453,6 +453,23 @@
             "file": "index.html",
             "description": "<p>Propose a game concept. Describe gameplay, enumerate the UI components you'd expect the game to have, and select the components you intend to build (the number is up to you, based on your availability, ambition, component complexity, etc). Here's a high-level example (greater specificity is probably appropriate for your deliverable):<p><p><em>&ldquo;My game is a World-War I fighter plane side-scroller. Each game level includes a take-off, some mission objective(s) such as recon behind enemy lines, survival through the enemy defenses, and a safe and successful landing (or tragic death!). The player must manage ammunition, fuel and oil, successfully navigate obstacles, accomplish the mission, and stay alive.</em></p><p><em>UI components include: flight instruments (altimeter, compass, clock), Mission guide (time to target, target indicator, mission-objective status, distance from home), a threat indicator, supply summary (ammunition, bombs, and fuel remaining), action bar (takeoff, land, fire machine gun, drop bomb, take picture), and mechanical status (how shot-up am I?).</em></p><p><em>I intent to build the flight instruments, the mission guide, and the action bar.</em>&rdquo;</p>",
             "instructions": "<p>Create and upload an HTML document that describes the game as detailed above. Include sketches, mockups, etc. as you see fit.<p>"
+          },
+          {
+            "slug": "assets",
+            "name": "Visual Assets",
+            "hidden": false,
+            "assigned": "2023-04-03",
+            "due": "2023-04-10",
+            "file": "index.html",
+            "description": "Create artwork as needed for the visual assets you'll need, paying attention to layers and alignment. Export assets, and embed them all on an html page.",
+            "instructions": "<p>Post an HTML file referencing the assets you have created.<p>",
+            "references": [
+              {
+                "name": "Stopwatch Demo",
+                "link": "projects/game-ui/stopwatch-demo/stopwatch.svg",
+                "description": "The file Abe uses for the demo."
+              }
+            ]
           }
         ]
       },
