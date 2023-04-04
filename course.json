@@ -473,7 +473,13 @@
                 "name": "Stopwatch Parts",
                 "link": "projects/game-ui/stopwatch-demo/parts.zip",
                 "description": "The stopwatch parts."
+              },
+              {
+                "name": "Stopwatch Demo",
+                "link": "https://wustl.zoom.us/rec/share/9LLhH-FZShBh29E_Jhi-VN5GMTNwyk4JvtcKzouzFSrg0SShYyls1DNb3E9v26k3.eY3UYc1soSk6CFvZ",
+                "description": "The recording we made in class."
               }
+              
             ]
           }
         ]
