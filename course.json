@@ -468,6 +468,11 @@
                 "name": "Stopwatch Demo",
                 "link": "projects/game-ui/stopwatch-demo/stopwatch.svg",
                 "description": "The file Abe uses for the demo."
+              },
+              {
+                "name": "Stopwatch Parts",
+                "link": "projects/game-ui/stopwatch-demo/parts.zip",
+                "description": "The stopwatch parts."
               }
             ]
           }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+</style>
+<g id="needle" class="st0">
+	<path class="st1" d="M256,160l32,144c0,17.7-14.3,32-32,32c-17.7,0-32-14.3-32-32L256,160z"/>
+</g>
+<g id="button">
+	<path d="M208,48V16c0-8.8,7.2-16,16-16h64c8.8,0,16,7.2,16,16v32c0,8.8-7.2,16-16,16v18.6c-10.5-1.5-21.1-2.6-32-2.6
+		s-21.5,1.1-32,2.6V64C215.2,64,208,56.8,208,48z"/>
+</g>
+<g id="bezel" class="st0">
+	<path class="st1" d="M256,96C141.1,96,48,189.1,48,304s93.1,208,208,208s208-93.1,208-208S370.9,96,256,96z M256,480
+		c-97.1,0-176-79-176-176c0-97.1,78.9-176,176-176c97,0,176,78.9,176,176C432,401,353,480,256,480z"/>
+	<path class="st1" d="M394.4,128.2c-16.7-13.2-35.3-24.1-55.4-32.1l17.2-29.8c4.4-7.7,14.2-10.3,21.9-5.9l27.7,16
+		c7.7,4.4,10.3,14.2,5.9,21.9L394.4,128.2z"/>
+	<path class="st1" d="M100.3,98.3c-4.4-7.7-1.8-17.4,5.8-21.9l27.8-16c7.6-4.4,17.4-1.8,21.8,5.9l17.2,29.8
+		c-20.1,8.1-38.6,18.9-55.4,32.1L100.3,98.3z"/>
+</g>
+</svg>
