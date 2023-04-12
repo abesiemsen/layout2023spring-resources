@@ -481,6 +481,28 @@
               }
               
             ]
+          },
+          {
+            "slug": "layout",
+            "name": "Layout",
+            "hidden": false,
+            "assigned": "2023-04-10",
+            "due": "2023-04-17",
+            "file": "index.html",
+            "description": "<p>Assemble your visual assets into a layout in HTML. Pay attention to structural decisions: in terms of tag hierarchy, and also in terms of concept. What is the visual reference from which each element gets positioned? The screen? A container or sub-container? Does it make sense to measure/position from the side? corner? middle?</p>",
+            "instructions": "<p>Post an HTML with your assets in your intended visual layout, and ready for animation / interaction.<p>",
+            "references": [
+              {
+                "name": "Corner Pin Demo",
+                "link": "projects/game-ui/corner-pin-demo/index.html",
+                "description": "The demo page."
+              },
+              {
+                "name": "Corner Pin Source",
+                "link": "projects/game-ui/corner-pin-demo.zip",
+                "description": "The demo source."
+              }
+            ]
           }
         ]
       },

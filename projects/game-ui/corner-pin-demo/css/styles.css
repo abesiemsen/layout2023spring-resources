@@ -1,0 +1,103 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.spaceship {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.status {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+}
+
+.status .controls {
+    display: flex;
+}
+
+.mission {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.stopwatch {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.stopwatch:active .stopwatch-background {
+    background-color: yellow;
+}
+
+.stopwatch:active .stopwatch-button {
+    transform: translateY(5%);
+}
+
+.stopwatch > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.stopwatch-needle {
+    transform-origin: 50% 60%;
+}
+
+.stopwatch-background {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.25s;
+}
+
+.stopwatch.running .stopwatch-needle {
+    animation: needle-rotate 10s linear infinite;
+}
+
+.stopwatch.danger .stopwatch-background {
+    background-color: red;
+}
+
+.rotated {
+    transform: rotate(45deg)
+}
+
+@keyframes needle-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
