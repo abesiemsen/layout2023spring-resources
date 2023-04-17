@@ -503,6 +503,28 @@
                 "description": "The demo source."
               }
             ]
+          },
+          {
+            "slug": "interactions",
+            "name": "Interactions",
+            "hidden": false,
+            "assigned": "2023-04-17",
+            "due": "2023-04-24",
+            "file": "index.html",
+            "description": "<p>With all visual elements in place, you're ready to add interaction, or at least simulation of interaction. With a little bit of javascript to toggle or cycle classes, you can show the various 'states' that a given control might have, complete with transitions and/or animations. If the control expects direction user interaction, you can show how clicking might change it. If the control is a 'read-only' display (such as a score, progress bar, etc), you might create an animation to show how it changes, or you might 'trigger' a state change with a click on a different element.</p><p>Referring back to the project description: How does each component identify itself? How does it interact with the user? How does it indication it's status? How does it provide feedback?</p>",
+            "instructions": "<p>Post a version of your game UI with interactions enabled.<p>",
+            "references": [
+              {
+                "name": "Cycle Classes Demo",
+                "link": "projects/game-ui/cycle-classes-demo/index.html",
+                "description": "The demo page."
+              },
+              {
+                "name": "Cycle Classes Source",
+                "link": "projects/game-ui/cycle-classes-demo.zip",
+                "description": "The demo source."
+              }
+            ]
           }
         ]
       },
