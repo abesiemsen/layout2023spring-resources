@@ -535,6 +535,18 @@
                 "description": "The recording we made in class."
               }
             ]
+          },
+          {
+            "slug": "final",
+            "name": "Final Deliverable",
+            "hidden": false,
+            "assigned": "2023-04-24",
+            "due": "2023-04-26",
+            "file": "index.html",
+            "description": "<p>Based on discussion and feedback from your instructor, make any final revisions or tweaks necessary to be satisfied that your Game UI is complete and ready to present. Expect to give us a short walk-through of your finished UI in class.</p>",
+            "instructions": "<p>Post your final game UI.<p>",
+            "references": [
+            ]
           }
         ]
       },
