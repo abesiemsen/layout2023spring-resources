@@ -550,7 +550,25 @@
           }
         ]
       },
-
+      {
+        "slug": "course-evaluation",
+        "name": "Course Evaluation",
+        "hidden": false,
+        "start": "2023-04-26",
+        "end": "2023-04-26",
+        "description": "Please fill out a course evaluation for this course!",
+        "references": [
+          {
+            "name": "Course Evaluation",
+            "link": "https://evals.wustl.edu",
+            "description": "The course evaluation form."
+          }
+        ],
+        "examples": [
+        ],
+        "deliverables": [
+        ]
+      },
       {
         "slug": "project-slug-goes-here",
         "name": "Project Name Goes Here",
